@@ -9,7 +9,7 @@
 /* Colors */
 
 :root {
-  --first-color: #4070f4;
+  --first-color: rgb(10, 36, 206);
   --second-color: #0e2431;
   --gardient-color: linear-gradient(to right, #5001fb, #8e0af3);
 }
@@ -223,9 +223,13 @@ img {
   width: 300px;
 }
 
-.home_img svg {
-  width: 100%;
+.home_svg {
+  width: 300px;
+  position: absolute;
+  margin-left: 9rem;
+  margin-top: 300px;
 }
+
 
 /* BUTTONS */
 .button {
@@ -485,8 +489,9 @@ img {
     bottom: 15%;
   }
 
-  .home_img svg {
-    width: 100%;
+  .home_svg {
+    width: 30%;
+    margin-left: 35rem;
   }
 
   .about_container,
@@ -506,13 +511,30 @@ img {
     column-gap: 2rem;
   }
 
-  .contact_form {
-    width: 400px;
+  .contact_container{
+    text-align: center;
+    margin-top: 30px;
   }
-  .contact_container {
-    justify-items: center;
+  .contact_item{
+    text-align: center;
+    margin: 5px;
+    font-size: x-large;
+    color: #010009;
+    margin-top: 6px;
+  }
+  .contact{
+    background-color: rgb(145, 218, 202);
+  }
+  .contact-title{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(10, 36, 206);
+    margin-bottom: var(--mb-6);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
   }
 }
+
 
 @media screen and (min-width: 1024px) {
   .bd_grid {
