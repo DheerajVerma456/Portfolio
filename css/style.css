@@ -310,7 +310,7 @@ img {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-weight: var(--font-semi);
+  /* font-weight: var(--font-semi); */
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
@@ -326,6 +326,7 @@ img {
 .skills_name {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .skill_bar {
@@ -545,4 +546,50 @@ img {
   .home_img {
     right: 10%;
   }
+}
+
+.pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;  
+  }
+.proitem1{
+  margin-left: 100px;
+  font-size: large;
+  margin-right: 0;
+}
+.proitem2{
+  font-size: large;
+  margin-left: 0;
+}
+
+.prolistitem{
+  margin: 20px;
+}
+.prolistitem:hover{
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: default;
+}
+.tech-title{
+  position: relative;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  font-size: xx-large;
+  color: rgb(10, 36, 206);
+  text-align: center;
+}
+.tech-title::after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
+  background-color: var(--first-color);
 }
